@@ -1,65 +1,109 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Book Consultation</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Consultation | HEXAHAUS</title>
+
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
+  <nav>
+    <div class="logo">HEXA<span>HAUS</span></div>
 
-<nav>
-<div class="logo">HEXA<span>HAUS</span></div>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="consultation.html">Consultation</a></li>
-</ul>
-</nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/consultation">Consultation</a></li>
+    </ul>
+  </nav>
 
+  <section class="section">
 
-<section class="section">
-<h1>Book Consultation</h1>
-<br>
+    <h1>Book Consultation</h1>
 
-<form name="consultation" method="POST" data-netlify="true">
+    <p>
+      Tell us about your dream space and our team will connect with you shortly.
+    </p>
 
-  <input type="hidden" name="form-name" value="consultation">
+    <br><br>
 
-  <input type="text" name="First Name" placeholder="First Name" required>
+    <form
+      name="consultation"
+      method="POST"
+      data-netlify="true"
+      action="/thankyou.html"
+    >
 
-  <input type="text" name="Last Name" placeholder="Last Name" required>
+      <!-- Required Hidden Input -->
+      <input type="hidden" name="form-name" value="consultation">
 
-  <input type="email" name="Email" placeholder="Email" required>
+      <input
+        type="text"
+        name="First Name"
+        placeholder="First Name"
+        required
+      >
 
-  <input type="tel" name="Phone" placeholder="Phone Number" required>
+      <input
+        type="text"
+        name="Last Name"
+        placeholder="Last Name"
+        required
+      >
 
-  <select name="Project Type">
-    <option>Residential Design</option>
-    <option>Commercial Interiors</option>
-    <option>Luxury Villa</option>
-  </select>
+      <input
+        type="email"
+        name="Email"
+        placeholder="Email Address"
+        required
+      >
 
-  <textarea name="Message" rows="6" placeholder="Tell us about your project"></textarea>
+      <input
+        type="tel"
+        name="Phone"
+        placeholder="Phone Number"
+        required
+      >
 
-  <button class="btn" type="submit">
-    Submit Consultation
-  </button>
+      <select name="Project Type" required>
+        <option value="">Select Project Type</option>
+        <option>Residential Design</option>
+        <option>Commercial Interiors</option>
+        <option>Luxury Villa</option>
+        <option>Office Interiors</option>
+        <option>Modular Kitchen</option>
+      </select>
 
-</form>
+      <textarea
+        name="Message"
+        rows="6"
+        placeholder="Tell us about your project"
+        required
+      ></textarea>
 
-</section>
+      <button type="submit" class="btn">
+        Submit Consultation
+      </button>
 
+    </form>
 
-<footer>
-<h3>HEXAHAUS Interiors</h3>
-<p>Luxury Interior Design Studio</p>
-<p>hello@hexahausinteriors.co.in</p>
-</footer>
+  </section>
 
+  <footer>
+    <h3>HEXAHAUS Interiors</h3>
+
+    <p>
+      Where Bespoke Design Meets Precision Engineering
+    </p>
+
+    <p>
+      hello@hexahausinteriors.co.in
+    </p>
+  </footer>
 
 </body>
 </html>
