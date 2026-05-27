@@ -23,24 +23,29 @@
   <h1>Book Consultation</h1>
   <br>
 
-  <form id="consultationForm" class="contact-form">
+<form action="https://formsubmit.co/hexahausinteriors.co.in" method="POST">
 
-    <input type="text" name="First Name" placeholder="First Name" required>
-    <input type="text" name="Last Name" placeholder="Last Name" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <input type="tel" name="Phone" placeholder="Phone Number" required>
+  <input type="text" name="First Name" placeholder="First Name" required>
 
-    <select name="Project Type">
-      <option>Residential Design</option>
-      <option>Commercial Interiors</option>
-      <option>Luxury Villa</option>
-      <option>Office Interiors</option>
-    </select>
+  <input type="text" name="Last Name" placeholder="Last Name" required>
 
-    <textarea name="Message" rows="6" placeholder="Tell us about your project"></textarea>
+  <input type="email" name="Email" placeholder="Email" required>
 
-    <button class="btn" type="submit">Submit Consultation</button>
-  </form>
+  <input type="tel" name="Phone" placeholder="Phone Number" required>
+
+  <select name="Project Type">
+    <option>Residential Design</option>
+    <option>Commercial Interiors</option>
+    <option>Luxury Villa</option>
+  </select>
+
+  <textarea name="Message"></textarea>
+
+  <input type="hidden" name="_next" value="https://YOUR_GITHUB_URL/thankyou.html">
+
+  <button type="submit">Submit</button>
+
+</form>
 
 </section>
 
