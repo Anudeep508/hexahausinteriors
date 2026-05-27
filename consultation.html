@@ -2,48 +2,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Book Consultation | HEXAHAUS</title>
-  <link rel="stylesheet" href="css/style.css">
+<title>Book Consultation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 
 <nav>
-  <div class="logo">HEXA<span>HAUS</span></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="consultation.html">Consultation</a></li>
-  </ul>
+<div class="logo">HEXA<span>HAUS</span></div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="consultation.html">Consultation</a></li>
+</ul>
 </nav>
 
 
 <section class="section">
-  <h1>Book Consultation</h1>
-  <br>
+<h1>Book Consultation</h1>
+<br>
 
 <form action="https://formsubmit.co/hello@hexahausinteriors.co.in" method="POST">
 
-  <input type="text" name="First Name" placeholder="First Name" required>
+<input type="text" name="First Name" placeholder="First Name" required>
 
-  <input type="text" name="Last Name" placeholder="Last Name" required>
+<input type="text" name="Last Name" placeholder="Last Name" required>
 
-  <input type="email" name="Email" placeholder="Email" required>
+<input type="email" name="Email" placeholder="Email" required>
 
-  <input type="tel" name="Phone" placeholder="Phone Number" required>
+<input type="tel" name="Phone" placeholder="Phone Number" required>
 
-  <select name="Project Type">
-    <option>Residential Design</option>
-    <option>Commercial Interiors</option>
-    <option>Luxury Villa</option>
-  </select>
+<select name="Project Type">
+<option>Residential Design</option>
+<option>Commercial Interiors</option>
+<option>Luxury Villa</option>
+<option>Office Interiors</option>
+</select>
 
-  <textarea name="Message"></textarea>
+<textarea name="Message" rows="6" placeholder="Tell us about your project"></textarea>
 
-  <input type="hidden" name="_next" value="https://YOUR_GITHUB_URL/thankyou.html">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_subject" value="New HEXAHAUS Consultation Lead">
+<input type="hidden" name="_next" value="thankyou.html">
 
-  <button type="submit">Submit</button>
+<button class="btn" type="submit">Submit Consultation</button>
 
 </form>
 
@@ -51,12 +57,11 @@
 
 
 <footer>
-  <h3>HEXAHAUS Interiors</h3>
-  <p>Where Bespoke Design Meets Precision Engineering</p>
-  <p>Hyderabad, India</p>
+<h3>HEXAHAUS Interiors</h3>
+<p>Luxury Interior Design Studio</p>
+<p>hello@hexahausinteriors.co.in</p>
 </footer>
 
 
-<script src="js/main.js"></script>
 </body>
 </html>
