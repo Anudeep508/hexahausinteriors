@@ -31,65 +31,71 @@
 
     <br><br>
 
-    <form
-      name="consultation"
-      method="POST"
-      data-netlify="true"
-      action="/thankyou.html"
-    >
+   <form
+  name="consultation"
+  method="POST"
+  data-netlify="true"
+  netlify
+  action="/thankyou.html"
+>
 
-      <!-- Required Hidden Input -->
-      <input type="hidden" name="form-name" value="consultation">
+<input type="hidden" name="form-name" value="consultation">
 
-      <input
-        type="text"
-        name="First Name"
-        placeholder="First Name"
-        required
-      >
+<p hidden>
+  <label>
+    Don’t fill this out:
+    <input name="bot-field">
+  </label>
+</p>
 
-      <input
-        type="text"
-        name="Last Name"
-        placeholder="Last Name"
-        required
-      >
+  <input
+    type="text"
+    name="First Name"
+    placeholder="First Name"
+    required
+  >
 
-      <input
-        type="email"
-        name="Email"
-        placeholder="Email Address"
-        required
-      >
+  <input
+    type="text"
+    name="Last Name"
+    placeholder="Last Name"
+    required
+  >
 
-      <input
-        type="tel"
-        name="Phone"
-        placeholder="Phone Number"
-        required
-      >
+  <input
+    type="email"
+    name="Email"
+    placeholder="Email Address"
+    required
+  >
 
-      <select name="Project Type" required>
-        <option value="">Select Project Type</option>
-        <option>Residential Design</option>
-        <option>Commercial Interiors</option>
-        <option>Luxury Villa</option>
-        <option>Office Interiors</option>
-        <option>Modular Kitchen</option>
-      </select>
+  <input
+    type="tel"
+    name="Phone"
+    placeholder="Phone Number"
+    required
+  >
 
-      <textarea
-        name="Message"
-        rows="6"
-        placeholder="Tell us about your project"
-        required
-      ></textarea>
+  <select name="Project Type" required>
+    <option value="">Select Project Type</option>
+    <option>Residential Design</option>
+    <option>Commercial Interiors</option>
+    <option>Luxury Villa</option>
+    <option>Office Interiors</option>
+  </select>
 
-      <button type="submit" class="btn">
-        Submit Consultation
-      </button>
+  <textarea
+    name="Message"
+    rows="6"
+    placeholder="Tell us about your project"
+    required
+  ></textarea>
 
-    </form>
+  <button type="submit" class="btn">
+    Submit Consultation
+  </button>
+
+</form>
 
   </section>
 
