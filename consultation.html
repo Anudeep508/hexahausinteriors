@@ -25,31 +25,29 @@
 <h1>Book Consultation</h1>
 <br>
 
-<form action="https://formsubmit.co/anudeep.k336@gmail.com" method="POST">
+<form name="consultation" method="POST" data-netlify="true">
 
-<input type="text" name="First Name" placeholder="First Name" required>
+  <input type="hidden" name="form-name" value="consultation">
 
-<input type="text" name="Last Name" placeholder="Last Name" required>
+  <input type="text" name="First Name" placeholder="First Name" required>
 
-<input type="email" name="Email" placeholder="Email" required>
+  <input type="text" name="Last Name" placeholder="Last Name" required>
 
-<input type="tel" name="Phone" placeholder="Phone Number" required>
+  <input type="email" name="Email" placeholder="Email" required>
 
-<select name="Project Type">
-<option>Residential Design</option>
-<option>Commercial Interiors</option>
-<option>Luxury Villa</option>
-<option>Office Interiors</option>
-</select>
+  <input type="tel" name="Phone" placeholder="Phone Number" required>
 
-<textarea name="Message" rows="6" placeholder="Tell us about your project"></textarea>
+  <select name="Project Type">
+    <option>Residential Design</option>
+    <option>Commercial Interiors</option>
+    <option>Luxury Villa</option>
+  </select>
 
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_subject" value="New HEXAHAUS Consultation Lead">
-<input type="hidden" name="_next" value="thankyou.html">
+  <textarea name="Message" rows="6" placeholder="Tell us about your project"></textarea>
 
-<button class="btn" type="submit">Submit Consultation</button>
+  <button class="btn" type="submit">
+    Submit Consultation
+  </button>
 
 </form>
 
